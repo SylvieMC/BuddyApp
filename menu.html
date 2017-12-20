@@ -8,57 +8,38 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/jquery.sidr.light.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sidr.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
-<div id="full-content">
 
-    <nav id="main-menu-buddy">
-        <div id="nav-icon2">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div id="sidr">
-            <ul>
-                <li><a href="#">Présentation</a></li>
-                <li class="active"><a href="#" class="submenu-button">Jeux</a>
-                    <ul class="submenu">
-                        <li><a href="#">L'art à travers le temps</a></li>
-                        <li><a href="#">Les disparus du cartel</a></li>
-                        <li><a href="#">Devine à Beaubourg</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="app-7">
-        <ol>
-            <!--
-              Maintenant nous fournissons à chaque todo-item l'objet todo
-              qu'il représente de manière à ce que son contenu puisse être dynamique.
-              Nous avons également besoin de fournir à chaque composant une « clé »,
-              mais nous expliquerons cela plus tard.
-            -->
-            <todo-item
-                    v-for="item in groceryList"
-                    v-bind:todo="item"
-                    v-bind:key="item.id">
-            </todo-item>
-        </ol>
+<nav id="main-menu-buddy">
+    <div id="nav-icon2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
-    <div id="content-hider"></div>
-</div>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.sidr.min.js"></script>
-<script type="text/javascript" src="js/vue.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
+    <div id="sidr">
+        <ul>
+            <li><a href="#">Présentation</a></li>
+            <li class="active"><a href="#" class="submenu-button">Jeux</a>
+                <ul class="submenu">
+                    <li><a href="#">L'art à travers le temps</a></li>
+                    <li><a href="#">Les disparus du cartel</a></li>
+                    <li><a href="#">Devine à Beaubourg</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="content-hider"></div>
+
 </body>
 </html>
