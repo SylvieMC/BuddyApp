@@ -2,6 +2,10 @@ html,body {
     height: 100%;
 }
 
+body{
+    padding-left:75px;
+}
+
 .sidr ul.submenu {
     display:none;
 }
@@ -145,6 +149,7 @@ html,body {
 #main-menu-buddy {
     height: 100%;
     display: flex;
+    position: absolute;
     top: 0;
     left: 0;
     margin: 0;
